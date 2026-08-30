@@ -1,0 +1,56 @@
+{
+  "jira": {
+    "baseUrl": "https://jira.example.corp",
+    "projectKey": "PROJ",
+    "mode": "rest",
+    "cacheDir": ".cache/jira",
+    "sprintNumberPattern": "(\\d+)",
+    "fieldIds": {}
+  },
+  "scope": {
+    "resolvedAfter": "2025-08-01",
+    "includeUnresolved": true
+  },
+  "repo": {
+    "path": ".",
+    "ref": "HEAD",
+    "includeMerges": false,
+    "renameThreshold": 30,
+    "moveWindowDays": 90,
+    "fallbackSimilarity": 0.5,
+    "lineDiffMaxFileLines": 50,
+    "lineDiffMaxCommitLines": 400
+  },
+  "tickets": {
+    "file": "out/tickets.json",
+    "keyPattern": "PROJ-\\d+"
+  },
+  "output": {
+    "dir": "out",
+    "redactEmails": true
+  },
+  "glossary": {
+    "dir": "docs/glossary",
+    "chapters": [],
+    "pilotTickets": []
+  },
+  "exclude": {
+    "paths": [
+      "**/package-lock.json", "**/yarn.lock", "**/pnpm-lock.yaml",
+      "**/*.snap", "**/__snapshots__/**",
+      "**/*.md", "**/*.svg", "**/*.png", "**/*.jpg", "**/*.jpeg",
+      "**/*.woff", "**/*.woff2", "**/*.ico",
+      "**/dist/**", "**/build/**", "**/coverage/**", "**/*.generated.*"
+    ]
+  },
+  "thresholds": {
+    "targetShare": 0.4,
+    "targetMinLines": 30,
+    "targetMinLinesShare": 0.2,
+    "importOnlyMaxShare": 0.1,
+    "sharedTicketCount": 10,
+    "hotTicketCount": 25,
+    "featureMaxTicketCount": 5,
+    "hugeTicketFiles": 40
+  }
+}
