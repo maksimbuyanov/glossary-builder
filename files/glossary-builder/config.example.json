@@ -36,11 +36,24 @@
   },
   "exclude": {
     "paths": [
-      "**/package-lock.json", "**/yarn.lock", "**/pnpm-lock.yaml",
-      "**/*.snap", "**/__snapshots__/**",
-      "**/*.md", "**/*.svg", "**/*.png", "**/*.jpg", "**/*.jpeg",
-      "**/*.woff", "**/*.woff2", "**/*.ico",
-      "**/dist/**", "**/build/**", "**/coverage/**", "**/*.generated.*"
+      "**/package-lock.json",
+      "**/yarn.lock",
+      "**/pnpm-lock.yaml",
+      "**/*.snap",
+      "**/__snapshots__/**",
+      "**/*.md",
+      "**/*.svg",
+      "**/*.png",
+      "**/*.jpg",
+      "**/*.jpeg",
+      "**/*.woff",
+      "**/*.woff2",
+      "**/*.ico",
+      "**/dist/**",
+      "**/build/**",
+      "**/coverage/**",
+      "**/*.generated.*",
+      "tools/glossary-builder/**"
     ]
   },
   "thresholds": {

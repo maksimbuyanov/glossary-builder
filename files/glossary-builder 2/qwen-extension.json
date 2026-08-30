@@ -1,7 +1,0 @@
-{
-  "name": "glossary-builder",
-  "version": "1.0.0",
-  "contextFileName": "QWEN.md",
-  "commands": "commands",
-  "agents": "agents"
-}
